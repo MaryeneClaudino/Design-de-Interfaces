@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/pc.png">
     <title>Trabalho Design Interfaces</title>
     <style>
         table {    
@@ -15,7 +16,6 @@
             text-align: left;
             padding: 8px;
         }
-
     </style>
 </head>
 <body>
@@ -23,8 +23,17 @@
     <nav></nav>
     <main>
         <article>
-            <h1></h1>
-            <p><i></i><b></b></p>
+            <h1>Os Tipos de Alimento</h1>
+            <p>Os alimentos são classificados em grupos, esses são utilizados para a construção da <i>pirâmide alimentar</i>.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rwPzYiDVDwA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>A <i>pirâmide alimentar</i> brasileira é dividida em <b>08 grupos de alimentos</b>, distribuídos em <b>04 níveis ou andares</b>. 
+               De forma balanceada, e adequada às necessidades especificas de cada um, devemos compor nosso cardápio diário com alimentos nutritivos e, porque não saborosos, 
+               que ajudam no desenvolvimento das crianças e dos adolescentes e contribuem para a saúde e o bem-estar na fase adulta.
+            </p>
+            <figure>
+                <img src="img/alimentos.jpg" alt="Cesta de compras">
+                <figcaption>Figura 1 - Pirâmide Alimentar e Gupos dos Alimentos</figcaption>
+            </figure>
         </article>
         <article>
             <h1>Lista de Alimentos</h1>
@@ -88,7 +97,30 @@
                 </tfoot>
             </table>
         </article>
+        <article>
+            <h1>Contato</h1>
+            <form>
+                <fieldset>
+                <legend>Contato</legend>
+                <label for="nome">NOME*</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="tel">TELEFONE</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="12 91234-5678" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" maxlength="13" required><br>
+                <label for="email">EMAIL*</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="tipo">TIPO DE FRUTA*</label><br>
+                <input type="text" id="tipo" name="tipo" required><br>
+                <label for="duvida">DÚVIDA*</label><br>
+                <textarea id="duvida" name="duvida" rows="10" cols="60" required></textarea><br>
+                <p>* Campos Obrigatórios <input type="submit" value="ENVIAR"></p>   
+                </fieldset>
+            </form>
+        </article>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="https://ifrs.edu.br/riogrande/">
+           <img src="img/Logo-Campus-Rio-Grande_horizontal.png" alt="Logo IFRS Rio Grande">
+        </a>
+    </footer>
 </body>
 </html>

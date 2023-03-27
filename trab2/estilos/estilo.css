@@ -344,7 +344,7 @@ fieldset{
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
     width: 65vw;

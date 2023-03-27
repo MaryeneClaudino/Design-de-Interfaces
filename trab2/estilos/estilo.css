@@ -354,7 +354,7 @@ fieldset{
     border: 0.2vw solid #edb789;
     border-radius: 0vw 5vw 0vw 0vw;
     box-shadow: 0.2vw 0.2vw 0.5vw #edb789;
-
+   
 }
 
 fieldset legend{
@@ -367,8 +367,7 @@ fieldset legend{
 fieldset label{
 
     margin-left: 3vw;
-    font-size: 0.9rem;
-
+    
 }
 
 fieldset input, select{
@@ -427,6 +426,7 @@ fieldset input, select{
     width: 55vw;
     font-size: 0.8rem;
     margin-left: 3vw;
+    margin-bottom: 3vw;
 
 }
 /* ---------------------------------------------------------------------------- */

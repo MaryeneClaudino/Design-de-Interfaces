@@ -424,7 +424,7 @@ fieldset input, select{
     align-items: flex-start;
     gap: 0.3vw;
     width: 55vw;
-    font-size: 2vw;
+    font-size: 0.95rem;
     margin-left: 3vw;
     margin-bottom: 3vw;
 

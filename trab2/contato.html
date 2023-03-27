@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <title>Destino Dos Sonhos</title>
+</head>
+<body>
+    <header>  
+        <a href="index.html">
+            <img class="logo" src="img/logotransparente.png" alt="Logo Destino dos Sonhos">
+        </a>
+            <img class="monumentos" src="img/cabeçalho.png" alt="Imagem cidade">
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="produtos.html">Pacotes</a></li>
+        <li><a href="sobre.html">Quem Somos</a></li>
+        <li><a class="paginaatual" href="contato.html">Contato</a></li>
+       </ul>
+    </nav>
+    <section>
+        <h1>Contato</h1>
+        <form>
+            <fieldset>               
+                <legend>Informações para contato</legend>
+                <label for="nome">NOME*</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="sobrenome">SOBRENOME*</label><br>
+                <input type="text" id="sobrenome" name="sobrenome" required><br>
+                <label for="tel">TELEFONE*</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="(12) 91234-5678" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" maxlength="13" required><br>
+                <label for="email">EMAIL*</label><br>
+                <input type="email" id="email" name="email" required><br>  
+                <label for="assunto">CIDADE MAIS PRÓXIMA*</label><br>
+                <select id="cidade" name="cidade" required>
+                    <option value="pelotas">Pelotas</option> 
+                    <option value="rio grande">Rio Grande</option>
+                    <option value="sao jose do norte">São José do Norte</option>                                                            
+                </select><br>                         
+                <label for="assunto">ASSUNTO*</label><br>
+                <select id="assunto" name="assunto" required>
+                    <option value="pacotes">Pacotes de Viajem</option>
+                    <option value="locais de saida">Local de Saída</option>
+                    <option value="orcamento">Orçamentos</option>
+                    <option value="promocoes">Promoções</option>
+                </select><br>
+                <label for="duvida">DÚVIDA*</label><br>
+                <textarea class="textarea" id="duvida" name="duvida" rows="5" cols="45" required></textarea><br>
+                <div class="divrowfrom">
+                <p>* Campos Obrigatórios </p>   
+                <input class="botao" type="submit" value="ENVIAR">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+       <div>            
+            <p> <img class="redesocial" src="img/whatss.png" alt="icon whatssap"> (53) 991573012</p>
+            
+            <p> <img class="redesocial" src="img/insta.png" alt="icon instagram"> @destino_dos_sonhos</p>
+            
+            <p> <img class="redesocial" src="img/face.png" alt="icon facebook"> /destino_dos_sonhos</p>
+        </div>   
+        <div class="divcolumn"> 
+            <p>Rua Marechal Floriano Peixoto, 367. Rio Grande - RS</p>         
+            <div class="espacandoH">
+                <p>destino_dos_sonhos@gmail.com</p> 
+                <p>(53) 3233-4759</p>
+            </div>
+        </div>       
+    </footer>
+</body>
+</html>

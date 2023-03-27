@@ -1,0 +1,485 @@
+@import 'reset.css';
+/* Font 'Edu NSW ACT Foundation', cursive; Regular*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+/* Font 'Edu NSW ACT Foundation', cursive; Bold*/
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+
+
+/* --------------------------USANDO EM TODO SITE------------------------------ */
+:root{
+
+font-size: clamp(16px,2vw,24px);  /* Usar rem para aumentar a fonte responsivamente */
+font-family: 'Edu NSW ACT Foundation', cursive;
+
+}
+
+body{
+
+color:rgb(13, 68, 68);
+background: rgb(167,215,213);
+background: linear-gradient(0deg, rgba(167,215,213,1) 0%, rgba(255,255,255,1) 100%);
+
+}
+/* --------------------------------------------------------------------------- */
+
+/* -----------------------RESPONSIVIDADE DAS IMAGENS-------------------------- */
+.monumentos{
+
+width: 48vw;
+height: 14vw;
+
+}
+
+.redesocial{
+
+width: 2.8vw;
+height: 2.8vw;
+
+}
+
+.logo{
+
+width: 17vw;
+height: 12.5vw;
+
+}
+
+.time{
+
+width: 45vw;
+height: 20vw;
+
+}
+
+.legendatime{
+
+text-align: center;
+
+}
+
+.turistico{
+
+width: 21vw;
+height: 14vw;
+margin-top: 1.5vw;
+border: 3px;
+border-radius: 0vw 2vw;
+box-shadow: 0.4vw 0.4vw 0.7vw black;
+
+}
+
+.legendaturistico{
+
+text-align: center;
+font-weight: 600;
+white-space: nowrap; 
+font-size: clamp(13px,2vw,18px);
+margin-top: 0.5vw;
+
+}
+
+.pontoturistico{
+
+width: 80vw;
+height: 50vw;
+margin-top: 5vw;
+
+}
+
+.fotocliente{
+
+width: 8.5vw;
+float: left;
+margin-right: 3vw;
+
+}
+
+.nomecliente{
+
+text-align: center;
+margin-right: 3vw;
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* -------------------------------CABEÇALHO------------------------------------ */
+header {
+
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;
+    align-items: center;    
+    width: 95vw;
+    height: 15vw;          
+    margin: auto;
+    border-radius: 5vw 5vw 0vw 0vw;
+    background: rgb(167,215,213);
+    background: linear-gradient(180deg, rgba(167,215,213,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 0.5vw 0.5vw 0.5vw #edb789; 
+}
+/* ---------------------------------------------------------------------------- */
+
+/* ----------------------------------MENU-------------------------------------- */
+.paginaatual{
+
+font-style: italic;  
+font-weight: 600;
+color:rgb(2, 37, 37);
+
+}
+
+nav{
+
+    width: 95vw;
+    height: 4.5vw;
+    margin: auto;    
+    margin-top: 0.5vw;  
+    border-radius: 0vw 0vw 9vw 9vw;
+    box-shadow: 0.4vw 0.4vw 0.4vw #edb789;    
+    background-color: rgb(216, 240, 239);
+
+}
+
+nav ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;   
+    white-space: nowrap; 
+
+}
+
+nav li a{
+
+text-decoration: none;
+display: flex;
+justify-content: space-evenly;
+align-items: center;  
+margin-top: 0.5vw;
+width: 17vw;
+height: 3.5vw;
+color: rgb(13, 68, 68);
+
+}
+
+nav li a:hover{
+
+background-color: #f5923b;
+margin-top: 0.5vw;
+width: 22vw;
+height: 3.5vw;
+font-weight: 400;
+color: antiquewhite;
+border-radius: 0vw 2vw;
+box-shadow: -0.4vw -0.4vw 0.5vw rgb(167,215,213);
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* ---------------------------CONTEÚDO PRINCIPAL------------------------------- */
+section{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+min-height: 50vw;
+max-height: 500vw;
+margin-bottom: 10vw;
+
+}
+
+section h1{
+
+display: flex;
+align-self: flex-start;
+font-weight: 600;
+font-size: 2rem;
+margin: 3vw;
+margin-left: 6.5vw;
+margin-bottom: 6vw;
+
+}
+
+section h2{
+
+display: flex;
+align-self: flex-start;
+font-weight: 600;
+font-size: 1.8rem;
+margin: 3vw;
+margin-left: 6.5vw;
+margin-bottom: 7.5vw;
+margin-top: 7.5vw;
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* --------------------------------PÁGINA PRINCIPAL---------------------------- */
+.saibamais{
+
+min-width: 10vw;
+max-width:50vw;
+padding: 0.6vw;
+background-color: #c8f0e6;
+box-shadow: 0.4vw 0.4vw 0.6vw #f5923b;
+border-radius: 0vw 0.7vw;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-size: 0.7rem;
+cursor: pointer;
+
+}
+
+.saibamais:hover{
+
+background-color: #f5923b;
+font-weight: 600;
+color: antiquewhite;
+border-radius: 0vw 0.7vw;
+box-shadow: 0.4vw 0.4vw 0.5vw rgb(140,215,213);
+
+}
+
+.paragrafospaginainicial{
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;  
+text-align: center;
+width: 80vw;
+margin: auto;
+font-size: 1.3rem;
+
+}
+
+.depoimentos{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;  
+gap: 10vw;
+width: 80vw;
+margin: auto;
+font-size: 1.3rem;
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* -------------------------------PRODUTOS------------------------------------- */
+.posicaoprodutos{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;   
+gap: 2.5vw;
+width: 80vw;
+margin: auto;
+margin-top: 2vw;
+margin-bottom: 3vw;
+
+}
+
+.pacotes{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 0.8vw;
+background-color: #c8f0e6;
+border-radius: 0vw 2vw;
+box-shadow: 0.4vw 0.4vw 0.6vw #f5923b;
+width: 25vw;
+min-height: 35vw;
+max-height: 120vw;
+
+}
+
+.reta{
+
+border-bottom: 0.4vw solid rgb(13, 68, 68);
+width: 6vw;
+
+}
+
+.descricao{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: baseline; 
+gap: 0.5vw;
+font-size: 0.75rem;
+width: 17vw;
+min-height: 12vw;
+max-height: 120vw;
+margin: auto;
+margin-bottom: 3vw;
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* --------------------------------QUEM SOMOS---------------------------------- */
+.paragrafossobre{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;   
+gap: 1.9vw;
+text-align: justify;
+font-size: 1.3rem;
+width: 75vw;
+margin: auto;
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* ------------------------------FORMULÁRIO------------------------------------ */
+fieldset{
+
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: flex-start;
+width: 65vw;
+height: 88vw;
+margin: auto;
+border: 0.2vw solid #edb789;
+border-radius: 0vw 5vw 0vw 0vw;
+box-shadow: 0.2vw 0.2vw 0.5vw #edb789;
+
+}
+
+fieldset legend{
+
+font-size: 1.2rem;
+font-weight: 600;
+
+}
+
+fieldset label{
+
+margin-left: 3vw;
+
+}
+
+fieldset input, select{
+
+margin-left: 3vw;
+width: 55vw;
+height: 2.5vw;
+border-radius: 0vw 0.7vw;
+padding: 0.5vw;
+background-color: #f1e9e2;
+box-shadow: 0.5vw 0.5vw 0.5vw rgb(167,215,213) inset;
+color: rgb(5, 46, 46);
+font-size: 1vw;
+
+}
+
+.textarea{
+
+margin-left: 3vw;
+width: 55vw;
+height: 8vw;
+border-radius: 0vw 0.7vw;
+background-color: #f1e9e2;
+box-shadow: 0.5vw 0.5vw 0.5vw rgb(167,215,213) inset;
+color: rgb(5, 46, 46);
+
+}
+
+.botao{
+
+width: 5vw;
+box-shadow: 0.5vw 0.5vw 0.5vw rgb(140,215,213);
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-weight: 600;
+cursor: pointer;
+
+}
+
+.botao:hover{
+
+background-color: #f5923b;
+font-weight: 600;
+color: antiquewhite;
+border-radius: 0vw 0.7vw;
+box-shadow: 0.4vw 0.4vw 0.5vw #edb789 ;
+
+}
+
+.divrowfrom{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.3vw;
+    width: 55vw;
+    font-size: 1.5vw;
+    margin-left: 3vw;
+
+}
+/* ---------------------------------------------------------------------------- */
+
+/* -------------------------------RODAPÉ--------------------------------------- */
+footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.3vw;
+    width: 95vw;
+    height: 15vw;
+    margin: auto;  
+    margin-top: 15vw; 
+    border-radius: 0vw 0vw 5vw 5vw;
+    border: 0.3vw solid #edb789;
+    box-shadow: -0.15vw -0.15vw 0.5vw #edb789;
+      
+}
+
+footer div{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+    align-items: center;
+    white-space: nowrap;
+    width: 95vw;
+    height: 2vw;
+    margin: auto;  
+
+}
+
+footer div p{
+
+    display: flex;
+    gap: 1.5vw;  
+    font-size: 0.75rem;
+
+}
+
+.divcolumn{
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3vw;
+}
+
+.espacandoH{
+
+    display: flex;    
+    width: 30vw;
+        
+}
+/* ---------------------------------------------------------------------------- */

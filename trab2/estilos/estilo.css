@@ -349,6 +349,7 @@ fieldset{
     align-items: flex-start;
     width: 65vw;
     min-height: 88vw;
+    max-height: 200vw;
     margin: auto;
     border: 0.2vw solid #edb789;
     border-radius: 0vw 5vw 0vw 0vw;

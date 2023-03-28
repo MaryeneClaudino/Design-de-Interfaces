@@ -32,20 +32,22 @@
                 <label for="sobrenome">SOBRENOME*</label><br>
                 <input type="text" id="sobrenome" name="sobrenome" required><br>
                 <label for="tel">TELEFONE*</label><br>
-                <input type="tel" id="tel" name="tel" placeholder="(12) 91234-5678" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" maxlength="13" required><br>
+                <input type="tel" id="tel" name="tel" placeholder="12 91234-5678" pattern="[0-9]{2} [9]{1}[0-9]{4}-[0-9]{4}" maxlength="13" required><br>
                 <label for="email">EMAIL*</label><br>
                 <input type="email" id="email" name="email" required><br>  
                 <label for="assunto">CIDADE MAIS PRÓXIMA*</label><br>
                 <select id="cidade" name="cidade" required>
+                    <option value="">Selecione</option>
                     <option value="pelotas">Pelotas</option> 
                     <option value="rio grande">Rio Grande</option>
                     <option value="sao jose do norte">São José do Norte</option>                                                            
                 </select><br>                         
                 <label for="assunto">ASSUNTO*</label><br>
                 <select id="assunto" name="assunto" required>
-                    <option value="pacotes">Pacotes de Viajem</option>
+                    <option value="">Selecione</option>
                     <option value="locais de saida">Local de Saída</option>
                     <option value="orcamento">Orçamentos</option>
+                    <option value="pacotes">Pacotes de Viajem</option>                   
                     <option value="promocoes">Promoções</option>
                 </select><br>
                 <label for="duvida">DÚVIDA*</label><br>

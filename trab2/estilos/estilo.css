@@ -351,6 +351,7 @@ fieldset{
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
+    gap: 0.8vw;
     width: 65vw;
     min-height: 88vw;
     max-height: 200vw;
@@ -378,13 +379,13 @@ fieldset legend{
 fieldset input, select{
 
     width: 55vw;
-    height: 2.5vw;
+    height: 3.5vw;
     border-radius: 0vw 0.7vw;
     padding: 0.5vw;
     background-color: #f1e9e2;
     box-shadow: 0.5vw 0.5vw 0.5vw rgb(167,215,213) inset;
     color: rgb(5, 46, 46);
-    font-size: 1.4vw;
+    font-size: clamp(0.6rem,1.4vw,1.5rem);
 
 }
 
@@ -401,7 +402,7 @@ fieldset input, select{
 
 .botao{
 
-    width: 6vw;
+    width: clamp(40px,6vw,80px);
     box-shadow: 0.5vw 0.5vw 0.5vw rgb(140,215,213);
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-weight: 600;

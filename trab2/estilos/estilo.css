@@ -46,8 +46,8 @@ body{
 
 .time{
 
-    width: 45vw;
-    height: 20vw;
+    width: clamp(280px, 55vw,700px);
+    height: clamp(90px, 30vw,300px);
 
 }
 

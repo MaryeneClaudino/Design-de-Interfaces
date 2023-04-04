@@ -107,7 +107,7 @@ header {
     justify-content: space-evenly;
     align-items: center;    
     width: 95vw;
-    height: clamp(90px, 15vw,200px);          
+    height: clamp(90px, 20vw,200px);          
     margin: auto;
     border-radius: 5vw 5vw 0vw 0vw;
     background: rgb(167,215,213);
@@ -289,7 +289,7 @@ section h2{
     border-radius: 0vw 2vw;
     box-shadow: 0.4vw 0.4vw 0.6vw #f5923b;
     width: clamp(230px, 30vw,290px);
-    height: clamp(470px, 65vw,750px);
+    height: clamp(470px, 87vw,750px);
      
 }
 
@@ -395,7 +395,7 @@ fieldset input, select{
 
 .botao{
 
-    width: clamp(40px,6vw,80px);
+    width: clamp(40px,8vw,80px);
     box-shadow: 0.5vw 0.5vw 0.5vw rgb(140,215,213);
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-weight: 600;
@@ -435,7 +435,7 @@ footer{
     align-items: center;
     gap: 1vw;
     width: 95vw;
-    height: clamp(150px, 25vw,250px);
+    height: clamp(150px, 30vw,250px);
     margin: auto;  
     margin-top: 15vw;
     margin-bottom: 0vw;

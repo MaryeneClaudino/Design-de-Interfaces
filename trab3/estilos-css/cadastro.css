@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5vw auto auto 5vw;
+  grid-template-rows: auto 5vh auto 5vh auto 5vh auto;
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: 1/5;
+}
+
+.titulo {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.banner {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+
+.form {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+
+.footer {
+  grid-row: 7/8;
+  grid-column: 1/5;
+}
+
+.banner-campanha {
+  width: auto;
+  height: 110vh;
+}

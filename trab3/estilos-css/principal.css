@@ -74,6 +74,10 @@ body {
   grid-column: 1/5;
 }
 
+.cor-link {
+  color: var(--lilac-4);
+}
+
 .paragrafos {
   display: flex;
   flex-direction: column;

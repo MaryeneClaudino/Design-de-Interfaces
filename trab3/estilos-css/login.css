@@ -19,6 +19,7 @@ body {
   grid-row: 2/3;
   grid-column: 3/4;
   z-index: 1;
+  margin-bottom: auto;
 }
 
 .img-login {
@@ -133,6 +134,10 @@ body {
 
   .caixa-login {
     width: 100%;
+  }
+
+  fieldset {
+    gap: 0;
   }
 
   @media only screen and (min-width: 600px) {

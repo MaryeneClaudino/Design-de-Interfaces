@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos-css/global.css" />
+    <link rel="stylesheet" type="text/css" href="estilos-css/principal.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <title>Agasalho Solidário</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="img/AS.png" alt="Logo Agasalho Solidário">
+        <div class="menu-login">
+            <nav>
+                <ul>
+                    <li class="pagina-atual">Página Inicial</li>
+                    <li>Doações</li>
+                    <li>Quem Somos</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+            <div class="entrar">
+                <img class="icon-login" src="img/icon-login.png" alt="Icone login">
+                <a class="cor-link" href="login.html">Login</a>
+                <p>ou</p>
+                <a class="cor-link" href="cadastro.html">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <img class="img-banner" src="img/banner.png" alt="Banner principal">
+    </div>
+    <h1 class="titulo-sobre">Quem Somos</h1>
+    <div class="paragrafos" <p> A campanha Agasalho Solidário foi criada com a iniciativa de ajudar as pessoas
+        mais necessitadas a passar pelo rigoroso inverno do Rio Grande do Sul de forma digna.
+        Casos de morte por hipotermina em moradores de rua acontecem sempre no inverno, nosso
+        objetivo é mitigar esses casos e trazer um pouco de conforto e chance de sobreviver a
+        essas pessoas.
+        </p>
+        <p>
+            Venha nos ajudar a fazer a diferença na vida do próximo!
+        </p>
+    </div>
+    <button class="saiba-mais">Saiba Mais</button>
+    <h2 class="titulo-depoimentos titulo-doadores">Depoimento de Doadores</h2>
+    <div class="slideshow-container-doadores">
+        <div class="depoimento depoimento-doadores fade">
+            <figure>
+                <img class="foto" src="img/Laura.png" alt="Foto do doador">
+                <figcaption class="nome">Laura</figcaption>
+            </figure>
+            <p>
+                "Conheci a camapanha ano passado pelas redes sociais, logo fiz meu cadastro para
+                conseguir ajudar. O cadastro é simples e rápido, esse ano doarei novamente com certeza."
+            </p>
+        </div>
+        <div class="depoimento depoimento-doadores fade">
+            <figure>
+                <img class="foto" src="img/Michael.png" alt="Foto do doador">
+                <figcaption class="nome">Michael</figcaption>
+            </figure>
+            <p>
+                "Faço parte de algumas organizações para auxiliar os mais necessitados da minha
+                cidade, hoje além de ajudar a Agasalho Solidário, somos parceiros para auxiliar
+                a quem precisar na minha cidade."
+            </p>
+        </div>
+        <div class="depoimento depoimento-doadores fade">
+            <figure>
+                <img class="foto" src="img/Patricia.png" alt="Foto do doador">
+                <figcaption class="nome">Patrícia</figcaption>
+            </figure>
+            <p>
+                "Sempre que troco as roupas de verão para inverno no meu guarda roupas já sei que
+                posso encaminhar as peças que não usarei para a Agasalho Solidário, eles tem o
+                compromisso com quem necessita."
+            </p>
+        </div>
+        <a class="prev" onclick="plusSlidesDoador(-1)">❮</a>
+        <a class="next" onclick="plusSlidesDoador(1)">❯</a>
+    </div>
+    <h2 class="titulo-depoimentos titulo-ajudados">Depoimento de pessoas ajudadas</h2>
+    <div class="slideshow-container-ajudados">
+        <div class="depoimento depoimento-ajudados fade">
+            <figure>
+                <img class="foto" src="img/Roger.png" alt="Foto de pessoa ajudada">
+                <figcaption class="nome">Roger</figcaption>
+            </figure>
+            <p>
+                "Perdi tudo que tinha com o inicio das chuvas, o pessoal da agasalho solidário me deu
+                todo o tipo de roupa e cobertas. Sou muito grato pela ajuda."
+            </p>
+        </div>
+        <div class="depoimento depoimento-ajudados fade">
+            <figure>
+                <img class="foto" src="img/Josué.png" alt="Foto de pessoa ajudada">
+                <figcaption class="nome">Josué</figcaption>
+            </figure>
+            <p>
+                "Moro na rua a alguns anos e desde que conheci a camapanha não passo mais frio
+                no inverno, eles sempre me procuram pra ajudar e eu sempre posso ir até a sede quando"
+            </p>
+        </div>
+        <div class="depoimento depoimento-ajudados fade">
+            <figure>
+                <img class="foto" src="img/Madalena.png" alt="Foto de pessoa ajudada">
+                <figcaption class="nome">Madalena</figcaption>
+            </figure>
+            <p>
+                "Tenho muitos filhos e passo necessidade, não consigo compar roupas pra todos. A
+                Agasalho Solidário nos ajuda todos os anos com cobertas e agasalhos
+                para não passarmos frio no inverno."
+            </p>
+        </div>
+        <a class="prev" onclick="plusSlidesAjudado(-1)">❮</a>
+        <a class="next" onclick="plusSlidesAjudado(1)">❯</a>
+    </div>
+    <footer class="footer">
+        <div>
+            <p> <img class="redesocial" src="img/whatss.png" alt="icon whatssap"> (53) 981740249</p>
+
+            <p> <img class="redesocial" src="img/insta.png" alt="icon instagram"> @agasalhoSolidario</p>
+
+            <p> <img class="redesocial" src="img/face.png" alt="icon facebook"> /agasalhoSolidario</p>
+        </div>
+        <div class="divcolumn">
+            <p>Rua Joana D'arc, 173. Rio Grande - RS</p>
+            <div>
+                <p>agasalhoSolidario@gmail.com</p>
+                <p>(53) 3232-1928</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlidesDoador(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("depoimento-doadores");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "flex";
+
+        }
+
+        let slideIndexY = 1;
+        showSlidesY(slideIndexY);
+
+        function plusSlidesAjudado(n) {
+            showSlidesY(slideIndexY += n);
+        }
+
+        function currentSlide(n) {
+            showSlidesY(slideIndexY = n);
+        }
+
+        function showSlidesY(n) {
+            let i;
+            let slides = document.getElementsByClassName("depoimento-ajudados");
+
+            if (n > slides.length) { slideIndexY = 1 }
+            if (n < 1) { slideIndexY = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndexY - 1].style.display = "flex";
+
+        }
+    </script>
+</body>
+
+</html>

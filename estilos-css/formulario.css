@@ -1,0 +1,146 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0.6vw;
+  width: 30vw;
+  height: auto;
+  margin: auto;
+  padding: 3vw;
+  border: 0.2vw solid var(--lilac-0);
+  box-shadow: 0.2vw 0.2vw 0.5vw var(--lilac-4);
+}
+
+fieldset b {
+  color: var(--orange-0);
+}
+
+fieldset label {
+  font-size: 1.2rem;
+}
+
+fieldset legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+fieldset input,
+select {
+  width: 25vw;
+  height: 2.5vw;
+  border-radius: 15px;
+  padding: 0.5vw;
+  background-color: var(--lilac-1);
+  box-shadow: 0.2vw 0.2vw 0.5vw var(--lilac-4) inset;
+  font-size: clamp(0.6rem, 1.4vw, 1.5rem);
+  color: var(--blue-4);
+}
+
+.botao {
+  height: 50px;
+  width: auto;
+  box-shadow: 0.4vw 0.4vw 0.5vw var(--lilac-4);
+  font-family: "Zilla Slab", serif;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: var(--blue-1);
+  font-weight: 600;
+  color: var(--orange-0);
+  border-radius: 15px;
+  box-shadow: 0.4vw 0.4vw 0.5vw var(--blue-4);
+}
+
+.divrowfrom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.3vw;
+  width: 25vw;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .botao {
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+
+  .botao:hover {
+    border-radius: 10px;
+  }
+
+  fieldset input,
+  select {
+    border-radius: 10px;
+  }
+
+  fieldset label {
+    font-size: 1rem;
+  }
+
+  fieldset legend {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  fieldset {
+    width: 80vw;
+    gap: 1vw;
+  }
+
+  fieldset input,
+  select {
+    width: 95%;
+    margin: auto;
+    height: 6vw;
+    font-size: clamp(0.9rem, 3vw, 1.5rem);
+    border-radius: 8px;
+  }
+
+  .botao {
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .botao:hover {
+    border-radius: 10px;
+  }
+
+  .divrowfrom {
+    width: 95%;
+    gap: 10vw;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+
+  fieldset label {
+    font-size: 1.2rem;
+  }
+
+  fieldset legend {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 600px) {
+    fieldset input,
+    select {
+      border-radius: 15px;
+    }
+
+    .botao {
+      border-radius: 15px;
+    }
+
+    .botao:hover {
+      border-radius: 15px;
+    }
+  }
+}

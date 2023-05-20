@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300mm"
+   height="300mm"
+   viewBox="0 0 300 300"
+   version="1.1"
+   id="svg6092"
+   inkscape:version="1.2.2 (1:1.2.2+202212051552+b0a8486541)"
+   sodipodi:docname="logo insta.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6094"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.4204826"
+     inkscape:cx="321.05966"
+     inkscape:cy="700.38569"
+     inkscape:window-width="1366"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs6089" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g6249"
+       transform="matrix(13.251277,0,0,13.251277,-417.01527,-950.5444)">
+      <path
+         d="m 54.058857,83.059147 c 0,-6.224411 -5.046134,-11.270544 -11.270897,-11.270544 -6.224764,0 -11.270545,5.046133 -11.270545,11.270544 0,6.224764 5.045781,11.270897 11.270545,11.270897 6.224763,0 11.270897,-5.046133 11.270897,-11.270897"
+         style="fill:#5a0160;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778"
+         id="path4295" />
+      <path
+         d="m 48.464859,86.0821 c 0,1.465791 -1.188155,2.653947 -2.6543,2.653947 H 39.76536 c -1.465792,0 -2.6543,-1.188156 -2.6543,-2.653947 v -6.045553 c 0,-1.465791 1.188508,-2.653947 2.6543,-2.653947 h 6.045199 c 1.466145,0 2.6543,1.188156 2.6543,2.653947 z m -2.638777,-9.794169 h -6.076245 c -2.061633,0 -3.733094,1.671461 -3.733094,3.733094 v 6.076597 c 0,2.061281 1.671461,3.733094 3.733094,3.733094 h 6.076245 c 2.061986,0 3.733094,-1.671813 3.733094,-3.733094 v -6.076597 c 0,-2.061633 -1.671108,-3.733094 -3.733094,-3.733094"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778"
+         id="path4297" />
+      <path
+         d="m 42.78796,85.387128 c -1.285523,0 -2.327628,-1.042459 -2.327628,-2.327981 0,-1.285522 1.042105,-2.327628 2.327628,-2.327628 1.285875,0 2.32798,1.042106 2.32798,2.327628 0,1.285522 -1.042105,2.327981 -2.32798,2.327981 z m 0,-5.896681 c -1.97097,0 -3.5687,1.597731 -3.5687,3.5687 0,1.97097 1.59773,3.569053 3.5687,3.569053 1.970969,0 3.569052,-1.598083 3.569052,-3.569053 0,-1.970969 -1.598083,-3.5687 -3.569052,-3.5687"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778"
+         id="path4299" />
+      <path
+         d="m 47.278821,79.371561 c 0,0.442383 -0.358423,0.800806 -0.800806,0.800806 -0.442031,0 -0.800453,-0.358423 -0.800453,-0.800806 0,-0.44203 0.358422,-0.800453 0.800453,-0.800453 0.442383,0 0.800806,0.358423 0.800806,0.800453"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0352778"
+         id="path4301" />
+    </g>
+  </g>
+</svg>

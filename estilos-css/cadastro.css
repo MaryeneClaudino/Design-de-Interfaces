@@ -1,0 +1,85 @@
+@import "formulario.css";
+
+body {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5vw auto auto 5vw;
+  grid-template-rows: auto 5vw auto 5vw auto 5vw auto;
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: 1/5;
+}
+
+.titulo {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.banner {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+
+.form {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+
+.footer {
+  grid-row: 7/8;
+  grid-column: 1/5;
+}
+
+.banner-campanha {
+  width: auto;
+  height: 55vw;
+}
+
+@media only screen and (min-width: 1100px) {
+  .banner-campanha {
+    height: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5vw auto 5vw;
+    grid-template-rows: auto auto auto auto;
+    gap: 5vw;
+  }
+
+  .header {
+    grid-row: 1/2;
+    grid-column: 1/4;
+  }
+
+  .titulo {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .form {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+
+  .banner {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+
+  .footer {
+    grid-row: 5/6;
+    grid-column: 1/4;
+  }
+
+  .banner-campanha {
+    width: 80vw;
+    height: 110vw;
+  }
+}

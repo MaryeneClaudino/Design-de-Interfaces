@@ -2,7 +2,7 @@ body {
   display: grid;
   align-items: center;
   grid-template-columns: 5vw auto auto 5vw;
-  grid-template-rows: auto 5vh auto 5vh auto 5vh auto;
+  grid-template-rows: auto 5vw auto 5vw auto 5vw auto;
 }
 
 .header {

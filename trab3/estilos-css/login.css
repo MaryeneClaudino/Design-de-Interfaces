@@ -35,7 +35,7 @@ body {
 }
 
 .fieldset-login {
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   color: var(--orange-2);
   border: none;

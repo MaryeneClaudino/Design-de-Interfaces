@@ -41,7 +41,7 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
   width: 30vw;
-  height: auto;
+  height: 22vw;
   margin: auto;
   gap: 5px;
   padding: 10px;
@@ -121,7 +121,7 @@ select {
 
   .fieldset-login {
     gap: 3px;
-    padding: 10px;
+    height: 27vw;
   }
 
   fieldset input,
@@ -191,6 +191,7 @@ select {
     width: 65vw;
     gap: 4px;
     padding: 2px;
+    height: 65vw;
   }
 
   fieldset input,
@@ -226,6 +227,7 @@ select {
 
     .fieldset-login {
       width: 80%;
+      height: 45vw;
     }
 
     fieldset input,

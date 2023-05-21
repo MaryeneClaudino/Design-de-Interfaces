@@ -1,4 +1,4 @@
-header {
+.header-desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -7,6 +7,7 @@ header {
   height: 15vw;
   margin: auto;
   background-color: var(--lilac-1);
+  gap: 5vw;
 }
 
 .logo {
@@ -71,8 +72,9 @@ div a:hover {
     width: 27vw;
   }
 
-  header {
+  .header-desktop {
     height: 20vw;
+    gap: 5vw;
   }
 }
 
@@ -81,8 +83,9 @@ div a:hover {
     width: 70vw;
   }
 
-  header {
+  .header-desktop {
     height: 50vw;
+    gap: 1vw;
   }
 
   @media only screen and (min-width: 600px) {
@@ -90,8 +93,14 @@ div a:hover {
       width: 45vw;
     }
 
-    header {
+    .header-desktop {
       height: 35vw;
+    }
+  }
+
+  @media only screen and (max-width: 799px) {
+    .header-desktop {
+      display: none;
     }
   }
 
@@ -100,7 +109,7 @@ div a:hover {
       width: 35vw;
     }
 
-    header {
+    .header-desktop {
       height: 20vw;
     }
   }

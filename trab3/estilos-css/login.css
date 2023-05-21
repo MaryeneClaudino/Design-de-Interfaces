@@ -189,8 +189,8 @@ select {
 
   .fieldset-login {
     width: 65vw;
-    gap: 4px;
-    padding: 2px;
+    gap: 0;
+    padding: 0;
     height: 65vw;
   }
 

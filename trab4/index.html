@@ -79,8 +79,6 @@
     <main>
         <div id="home" class="position-content">
             <h1 class="title">A Pousada</h1>
-        </div>
-        <div>
             <img class="pousada" src="img/pousada.webp" alt="Foto da pousada">
             <p class="paragrafos">
                 A pousada Rabo do Lagarto se encontra entre as cidades de Rio Grande e Pelotas, no extremo sul do Rio
@@ -103,45 +101,95 @@
         </div>
         <div id="atividades" class="position-content">
             <h1 class="title">Atividades</h1>
+            <p class="paragrafos">
+                Aqui você encontra atividades ao ar livre para toda família passar um tempo em meio a paz e
+                tranquilidade da natureza.
+            </p>
+            <p class="paragrafos">
+                Nossa atividades incluem:
+            </p>
         </div>
         <div id="pacotes" class="position-content">
             <h1 class="title">Pacotes</h1>
+            <p class="paragrafos">
+                Os pacotes de diárias incluem todas as atividades da pousada e seus preços podem ser vistos abaixo.
+                Qualquer
+                dúvida ou caso especial(festas de aniversário, casamento, entre outros) basta entrar em contato com a
+                gente para
+                em um dos meios de comunicação para saber condições de pagamento e valores.
+            </p>
+
         </div>
         <div id="instalacoes" class="position-content">
             <h1 class="title">Nossas Instalações</h1>
             <p class="paragrafos">
-                Aqui você encontra atividades ao ar livre para toda família passar um tempo em meio a paz e
-                tranquilidade da natureza.
-                Também possuimos cabanas para casais apaixonados que desejam curtir um momento a sós bem romântico.
+                Nossa pousada está equipada com quartos confortavés e espaçosos pensando na sua maior comodidade durante
+                toda a estadia.
+                Possuimos chalés para casais apaixonados que desejam curtir um momento a sós bem romântico, com
+                hidromassagem. Para a
+                família temos cabanas grandes com lareira, ar condicionado e netflix nas televisões.
             </p>
+            <p class="paragrafos">
+                Confira algumas fotos das nossa instalações abaixo:
+            </p>
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="img/pousada.webp" class="d-block w-100" alt="Foto da pousada" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide4.webp" class="d-block w-100" alt="Foto das cabanas" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide1.webp" class="d-block w-100" alt="Fotos do quarto da cabana" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide3.webp" class="d-block w-100" alt="Fotos do quarto do chalé" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide2.webp" class="d-block w-100" alt="Fotos dos chalés cabana" loading="lazy">
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="contato" class="position-content">
             <h1 class="title">Contato</h1>
+            <div class="form">
+                <form onsubmit="alert('Sua dúvida foi enviada com sucesso. Resposnderemos o mais breve possível.')">
+                    <fieldset>
+                        <legend class="float-none w-auto">Informações pessoais</legend>
+                        <label for="nome">Nome<b>*</b></label><br>
+                        <input type="text" id="nome" name="nome" required><br>
+                        <label for="email">Email<b>*</b></label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="assunto">Assunto<b>*</b></label><br>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione</option>
+                            <option value="Funcionamento das atividades">Funcionamento das Atividades</option>
+                            <option value="Preços promocionais">Preços Promocionais</option>
+                            <option value="pacotes">Pacotes</option>
+                            <option value="outros">Outros</option>
+                        </select><br>
+                        <label for="duvida">Dúvida<b>*</b></label><br>
+                        <textarea class="textarea" id="duvida" name="duvida" rows="5" cols="45" required></textarea><br>
+                        <div class="divrowfrom">
+                            <p><b>* Campos Obrigatórios</b></p>
+                            <div class="posicao-botao">
+                                <input class="botao" type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-        <div class="form">
-            <form onsubmit="alert('Sua dúvida foi enviada com sucesso. Resposnderemos o mais breve possível.')">
-                <fieldset>
-                    <legend class="float-none w-auto">Informações pessoais</legend>
-                    <label for="nome">Nome<b>*</b></label><br>
-                    <input type="text" id="nome" name="nome" required><br>
-                    <label for="email">Email<b>*</b></label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="assunto">Assunto<b>*</b></label><br>
-                    <select id="assunto" name="assunto" required>
-                        <option value="">Selecione</option>
-                        <option value="Funcionamento das atividades">Funcionamento das Atividades</option>
-                        <option value="Preços promocionais">Preços Promocionais</option>
-                        <option value="pacotes">Pacotes</option>
-                        <option value="outros">Outros</option>
-                    </select><br>
-                    <label for="duvida">Dúvida<b>*</b></label><br>
-                    <textarea class="textarea" id="duvida" name="duvida" rows="5" cols="45" required></textarea><br>
-                    <div class="divrowfrom">
-                        <p><b>* Campos Obrigatórios</b></p>
-                        <input class="botao" type="submit" value="Cadastrar">
-                    </div>
-                </fieldset>
-            </form>
     </main>
     <footer class="footer margin-top" id="footer">
         <div>

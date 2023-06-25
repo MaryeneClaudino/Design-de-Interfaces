@@ -5,9 +5,8 @@ fieldset {
   justify-content: space-evenly;
   align-items: flex-start;
   gap: 0.6vw;
-  width: 45vw;
+  width: 48vw;
   height: auto;
-  margin-left: 3vw;
   padding: 3vw;
   border: 0.2vw solid var(--bs-turquoise-1);
   box-shadow: 0.2vw 0.2vw 0.5vw var(--bs-turquoise-4);
@@ -53,9 +52,13 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 0.3vw;
+  gap: 18vw;
   width: 40vw;
   font-size: 1rem;
+}
+
+.posicao-botao {
+  align-self: flex-end;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -76,7 +79,7 @@ textarea {
 
 @media only screen and (max-width: 1000px) {
   fieldset {
-    width: 75vw;
+    width: 80vw;
     gap: 1vw;
   }
 
@@ -99,7 +102,7 @@ textarea {
 
   .divrowfrom {
     width: 95%;
-    gap: 10vw;
+    gap: 15vw;
     margin: auto;
     font-size: 1.2rem;
   }
@@ -117,10 +120,6 @@ textarea {
     select,
     textarea {
       border-radius: 15px;
-    }
-
-    fieldset {
-      width: 60vw;
     }
   }
 }

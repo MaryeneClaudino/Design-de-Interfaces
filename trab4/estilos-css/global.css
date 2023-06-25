@@ -2,7 +2,6 @@
 @import "cores.css";
 @import "header.css";
 @import "table.css";
-@import "carousel.css";
 @import "contato.css";
 @import "footer.css";
 
@@ -73,6 +72,11 @@ html {
   height: auto;
 }
 
+#carousel {
+  width: 48vw;
+  height: auto;
+}
+
 @media only screen and (max-width: 1300px) {
   .botao {
     font-size: 0.9rem;
@@ -118,7 +122,10 @@ html {
 
   .pousada {
     width: 80vw;
-    height: auto;
+  }
+
+  #carousel {
+    width: 80vw;
   }
 
   @media only screen and (min-width: 600px) {

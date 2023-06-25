@@ -1,0 +1,26 @@
+table {
+  width: 48vw !important;
+  background-color: var(--bs-turquoise-5);
+  box-shadow: 0.35vw 0.35vw 0.6vw var(--bs-brown-4);
+}
+
+thead {
+  background-color: var(--bs-turquoise-1);
+}
+
+td,
+th {
+  color: var(--bs-red-4) !important;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bs-turquoise-1);
+}
+
+.table-hover tbody tr:hover td {
+  background: var(--bs-brown-1);
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}

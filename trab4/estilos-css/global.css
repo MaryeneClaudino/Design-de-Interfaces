@@ -1,0 +1,117 @@
+@import "reset.css";
+@import "cores.css";
+@import "header.css";
+@import "table.css";
+@import "carousel.css";
+@import "contato.css";
+@import "footer.css";
+
+body {
+  font-size: clamp(17px, 3vw, 24px) !important;
+  font-family: "Raleway", sans-serif !important;
+  color: var(--bs-red-4) !important;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  margin-bottom: 2vw;
+}
+
+.voltar {
+  display: flex;
+  justify-content: flex-end;
+  width: 98%;
+  position: sticky;
+  bottom: 0;
+  margin-bottom: 1.5vw;
+}
+
+.botao {
+  background-color: var(--bs-turquoise-1) !important;
+  box-shadow: 0.4vw 0.4vw 0.5vw var(--bs-turquoise-4);
+  color: var(--bs-red-4) !important;
+  height: 50px;
+  width: auto;
+  font-weight: 600 !important;
+  border-radius: 15px;
+}
+
+.botao:hover {
+  background-color: var(--bs-brown-1) !important;
+  border-radius: 15px;
+  box-shadow: 0.4vw 0.4vw 0.5vw var(--bs-brown-4);
+  font-weight: 600 !important;
+  color: var(--bs-red-1) !important;
+}
+
+.paragrafos {
+  width: 48vw;
+  text-align: justify;
+}
+
+.margin-botton {
+  margin-bottom: 2vw;
+}
+
+.margin-top {
+  margin-top: 2vw;
+}
+
+.link {
+  color: var(--bs-green-4) !important;
+}
+
+.link:hover {
+  color: var(--bs-green-1) !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .botao {
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+
+  .botao:hover {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .botao {
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .botao:hover {
+    border-radius: 10px;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .botao {
+      border-radius: 15px;
+    }
+
+    .botao:hover {
+      border-radius: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .botao-voltar {
+    width: 70px !important;
+    height: auto;
+  }
+
+  .voltar {
+    width: 100%;
+  }
+}

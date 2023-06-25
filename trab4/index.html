@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Rabo do Lagarto</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preload" href="estilos-css/global.css" as="style">
+    <link rel="stylesheet" type="text/css" href="estilos-css/global.css" />
+</head>
+
+<body>
+    <header id="header">
+        <a href="#home">
+            <img class="logo" src="img/logo.png" alt="Logo da pousada">
+        </a>
+        <nav>
+            <div class="desktop">
+                <ul id="menu-items" class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-contato" class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="side-menu">
+                <a class="btn" data-bs-toggle="offcanvas" href="#side-menu" role="button" aria-controls="side-menu">
+                    <img src="img/menu.svg" alt="Icon menu">
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="side-menu" aria-labelledby="side-menuLabel">
+                    <div class="offcanvas-header ">
+                        <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul id="menu-items" class="nav flex-column">
+                            <li class="nav-item">
+                                <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-contato" class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <footer class="footer" id="footer">
+        <div>
+            <p> <img class="redesocial" src="img/whatss.png" alt="icon whatssap" loading="lazy"> (53) 981740249</p>
+
+            <p> <img class="redesocial" src="img/insta.png" alt="icon instagram" loading="lazy"> @rabodolagarto</p>
+
+            <p> <img class="redesocial" src="img/face.png" alt="icon facebook" loading="lazy"> /rabodolagarto</p>
+        </div>
+        <div class="divcolumn">
+            <p>Rua Érico Mendes, 17. Povo Novo - RS</p>
+            <div>
+                <p>rabodolagarto@gmail.com</p>
+                <p>(53) 3233-4012</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        //Registra evento ao carregar a página
+        window.addEventListener('hashchange', detectPage);
+
+        function detectPage() {
+            var url = window.location.href;
+
+            if (!url.includes("#")) {
+                setActiveMenu("link-home");
+            } else {
+                var linkAtual = url.substring(url.lastIndexOf("#") + 1, url.length);
+                setActiveMenu("link-" + linkAtual);
+            }
+        }
+
+        function setActiveMenu(idLink) {
+            var arrLinks = document.getElementsByClassName("nav-link");
+            for (var i = 0; i < arrLinks.length; i++) {
+                if (arrLinks[i].id != idLink) {
+                    //desativa outros
+                    arrLinks[i].classList.remove("active");
+                } else {
+                    //ativa o clicado 
+                    arrLinks[i].classList.add("active");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

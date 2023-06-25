@@ -5,6 +5,8 @@
   align-items: flex-end;
   background-color: var(--bs-turquoise-1);
   width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .side-menu {

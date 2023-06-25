@@ -29,10 +29,10 @@
                         <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
                     </li>
                     <li class="nav-item">
-                        <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                        <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
                     </li>
                     <li class="nav-item">
-                        <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                        <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
                     </li>
                     <li class="nav-item">
                         <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
@@ -49,7 +49,9 @@
                 </a>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="side-menu" aria-labelledby="side-menuLabel">
                     <div class="offcanvas-header ">
-                        <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
+                        <a href="#home">
+                            <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
+                        </a>
                     </div>
                     <div class="offcanvas-body">
                         <ul id="menu-items" class="nav flex-column">
@@ -57,10 +59,10 @@
                                 <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
                             </li>
                             <li class="nav-item">
-                                <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                                <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
                             </li>
                             <li class="nav-item">
-                                <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                                <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
                             </li>
                             <li class="nav-item">
                                 <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
@@ -75,9 +77,73 @@
         </nav>
     </header>
     <main>
-        <br><br><br><br><br><br><br><br><br><br>
+        <div id="home" class="position-content">
+            <h1 class="title">A Pousada</h1>
+        </div>
+        <div>
+            <img class="pousada" src="img/pousada.webp" alt="Foto da pousada">
+            <p class="paragrafos">
+                A pousada Rabo do Lagarto se encontra entre as cidades de Rio Grande e Pelotas, no extremo sul do Rio
+                Grande do Sul. Um lugar
+                bonito e tranquilo, onde você e toda sua família poderá descansar e se divertir em meio a natureza.
+                Na nossa pousada não possuímos wifi, para que os hóspedes de desliguem da correria e da tecnologia e
+                consigam se conectar mais intensamente
+                com a natureza ao seu redor.
+            </p>
+            <p class="paragrafos">
+                No nosso site é possível conferir alguns <a class="link" href="#pacotes">preços</a> e <a class="link"
+                    href="#atividades">atividades</a> além de algumas das fotos das <a class="link"
+                    href="#instalacoes">nossas
+                    instalações</a>,
+                estamos disponíveis para retirar qualquer dúvida o mais rápido através dos nossos telefones de contato
+                ou pelo <a class="link" href="#contato">formulário</a> do
+                nosso site.
+            </p>
+            <p class="paragrafos">Estamos aguardando a sua visita ansiosamente.</p>
+        </div>
+        <div id="atividades" class="position-content">
+            <h1 class="title">Atividades</h1>
+        </div>
+        <div id="pacotes" class="position-content">
+            <h1 class="title">Pacotes</h1>
+        </div>
+        <div id="instalacoes" class="position-content">
+            <h1 class="title">Nossas Instalações</h1>
+            <p class="paragrafos">
+                Aqui você encontra atividades ao ar livre para toda família passar um tempo em meio a paz e
+                tranquilidade da natureza.
+                Também possuimos cabanas para casais apaixonados que desejam curtir um momento a sós bem romântico.
+            </p>
+        </div>
+        <div id="contato" class="position-content">
+            <h1 class="title">Contato</h1>
+        </div>
+        <div class="form">
+            <form onsubmit="alert('Sua dúvida foi enviada com sucesso. Resposnderemos o mais breve possível.')">
+                <fieldset>
+                    <legend class="float-none w-auto">Informações pessoais</legend>
+                    <label for="nome">Nome<b>*</b></label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+                    <label for="email">Email<b>*</b></label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="assunto">Assunto<b>*</b></label><br>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione</option>
+                        <option value="Funcionamento das atividades">Funcionamento das Atividades</option>
+                        <option value="Preços promocionais">Preços Promocionais</option>
+                        <option value="pacotes">Pacotes</option>
+                        <option value="outros">Outros</option>
+                    </select><br>
+                    <label for="duvida">Dúvida<b>*</b></label><br>
+                    <textarea class="textarea" id="duvida" name="duvida" rows="5" cols="45" required></textarea><br>
+                    <div class="divrowfrom">
+                        <p><b>* Campos Obrigatórios</b></p>
+                        <input class="botao" type="submit" value="Cadastrar">
+                    </div>
+                </fieldset>
+            </form>
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer margin-top" id="footer">
         <div>
             <p> <img class="redesocial" src="img/whatss.png" alt="icon whatssap" loading="lazy"> (53) 981740249</p>
 

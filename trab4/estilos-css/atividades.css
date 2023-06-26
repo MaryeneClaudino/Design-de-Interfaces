@@ -1,0 +1,35 @@
+.posicao-atividades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 48vw;
+  gap: 8vw;
+  height: 30vw;
+}
+
+.atividades {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
+  height: 8vw;
+}
+
+.thumbnail {
+  width: 10vw;
+  height: auto;
+  border-radius: 0.5vw;
+  box-shadow: 0.3vw 0.3vw 0.6vw var(--bs-brown-4);
+}
+
+.legenda-atividade {
+  text-align: center;
+  width: 10vw;
+}
+
+.margin-atividade {
+  margin-bottom: 8vw;
+}

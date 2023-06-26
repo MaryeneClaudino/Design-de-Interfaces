@@ -4,9 +4,9 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  width: 48vw;
+  width: 60vw;
   gap: 8vw;
-  height: 30vw;
+  height: 33vw;
 }
 
 .atividades {
@@ -16,10 +16,11 @@
   align-items: center;
   gap: 1vw;
   height: 8vw;
+  cursor: pointer;
 }
 
 .thumbnail {
-  width: 10vw;
+  width: 12vw;
   height: auto;
   border-radius: 0.5vw;
   box-shadow: 0.3vw 0.3vw 0.6vw var(--bs-brown-4);
@@ -27,9 +28,69 @@
 
 .legenda-atividade {
   text-align: center;
-  width: 10vw;
+  width: 12vw;
 }
 
 .margin-atividade {
   margin-bottom: 8vw;
+}
+@media only screen and (max-width: 1599px) {
+  .posicao-atividades {
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .margin-atividade {
+    margin-bottom: 13vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .thumbnail,
+  .legenda-atividade {
+    width: 20vw;
+  }
+
+  .posicao-atividades {
+    width: 80vw;
+    height: 65vw;
+    margin-top: -7vw;
+  }
+
+  .margin-atividade {
+    margin-bottom: 13vw;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .thumbnail,
+    .legenda-atividade {
+      width: 25vw;
+    }
+
+    .posicao-atividades {
+      height: 120vw;
+      margin-top: -10vw;
+    }
+
+    .margin-atividade {
+      margin-bottom: 15vw;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    .posicao-atividades {
+      height: clamp(650px, 170vw, 720px);
+      margin-top: clamp(-80px, 5vw, -70px);
+    }
+
+    .thumbnail,
+    .legenda-atividade {
+      width: 35vw;
+    }
+
+    .margin-atividade {
+      margin-bottom: clamp(80px, 22vw, 100px);
+    }
+  }
 }

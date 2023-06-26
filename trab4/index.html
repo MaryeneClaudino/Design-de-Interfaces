@@ -106,45 +106,129 @@
                 em nossos ambientes internos quanto nos campos e bosques que cercam a pousada.
             </p>
             <p class="paragrafos">
-                Contamos com diversas opções de atividades ao ar livre, tais como:
+                Para maiores detalhes de horário de funcionamento e preços é só clicar na atividade desejada, pois
+                contamos com diversas opções, tais como:
             </p>
             <div class="posicao-atividades margin-atividade">
-                <div class="atividades">
-                    <img class="thumbnail" src="img/camping.webp" alt="Área de camping">
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalCamping">
+                    <img class="thumbnail" src="img/camping.webp" alt="Área de camping" loading="lazy">
                     <p class="legenda-atividade">
                         Área de Camping
                     </p>
                 </div>
-                <div class="atividades">
-                    <img class="thumbnail" src="img/cavalo.webp" alt="Passeio de Cavalo">
+                <!--------------------------------- Modal Camping ----------------------------------->
+                <div class="modal fade" id="ModalCamping" tabindex="-1" aria-labelledby="ModalCamping"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Camping
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalCavalo">
+                    <img class="thumbnail" src="img/cavalo.webp" alt="Passeio de Cavalo" loading="lazy">
                     <p class="legenda-atividade">
                         Passeio a cavalo
                     </p>
                 </div>
-                <div class="atividades">
-                    <img class="thumbnail" src="img/churrasco.webp" alt="Churrasco Campeiro">
+                <!--------------------------------- Modal Cavalo ----------------------------------->
+                <div class="modal fade" id="ModalCavalo" tabindex="-1" aria-labelledby="ModalCavalo" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Cavalo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalChurrasco">
+                    <img class="thumbnail" src="img/churrasco.webp" alt="Churrasco Campeiro" loading="lazy">
                     <p class="legenda-atividade">
                         Área para Churrasco Campeiro
                     </p>
                 </div>
-                <div class="atividades">
-                    <img class="thumbnail" src="img/piscina.webp" alt="Piscina Climatizada">
+                <!--------------------------------- Modal Churrasco ----------------------------------->
+                <div class="modal fade" id="ModalChurrasco" tabindex="-1" aria-labelledby="ModalChurrasco"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Churrasco
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalPiscina">
+                    <img class="thumbnail" src="img/piscina.webp" alt="Piscina Climatizada" loading="lazy">
                     <p class="legenda-atividade">
                         Piscina Climatizada
                     </p>
                 </div>
-                <div class="atividades">
-                    <img class="thumbnail" src="img/fazendinha.webp" alt="Vivências Laborais">
+                <!--------------------------------- Modal Piscina ----------------------------------->
+                <div class="modal fade" id="ModalPiscina" tabindex="-1" aria-labelledby="ModalPiscina"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Piscina
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalFazendinha">
+                    <img class="thumbnail" src="img/fazendinha.webp" alt="Vivências Laborais" loading="lazy">
                     <p class="legenda-atividade">
                         Vivências Laborais
                     </p>
                 </div>
-                <div class="atividades">
-                    <img class="thumbnail" src="img/charrete.webp" alt="Passeio de Charrete">
+                <!--------------------------------- Modal Fazendinha ----------------------------------->
+                <div class="modal fade" id="ModalFazendinha" tabindex="-1" aria-labelledby="ModalFazendinha"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Fazendinha
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalCharrete">
+                    <img class="thumbnail" src="img/charrete.webp" alt="Passeio de Charrete" loading="lazy">
                     <p class="legenda-atividade">
                         Passeio de charrete
                     </p>
                 </div>
+                <!--------------------------------- Modal Charrete ----------------------------------->
+                <div class="modal fade" id="ModalCharrete" tabindex="-1" aria-labelledby="ModalCharrete"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Charrete
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
             </div>
             <p class="paragrafos">
                 Venha explorar a paisagem pampeana e respirar o ar puro dos nossos campos verdes!
@@ -153,7 +237,11 @@
         <div id="pacotes" class="position-content">
             <h1 class="title">Pacotes</h1>
             <p class="paragrafos">
-                Os pacotes de diárias incluem todas as atividades da pousada. O pacote família inclui até 4 pessoas.
+                Os pacotes de diárias são referentes as cabanas e chalés e o pacote família inclui até 4 pessoas. Para
+                saber como funciona e os preços das atividades disponíveis na nossa pousada é só <a class="link"
+                    href="#atividades">clicar aqui</a>.
+            </p>
+            <p class="paragrafos">
                 Os preços dos pacotes atuais podem ser vistos abaixo:
             </p>
             <table class="table table-striped table-hover">
@@ -215,7 +303,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="img/pousada" class="d-block w-100" alt="Foto da pousada" loading="lazy">
+                        <img src="img/pousada.webp" class="d-block w-100" alt="Foto da pousada" loading="lazy">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="img/slide4.webp" class="d-block w-100" alt="Foto das cabanas" loading="lazy">

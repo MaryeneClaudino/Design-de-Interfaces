@@ -2,6 +2,7 @@
 @import "cores.css";
 @import "header.css";
 @import "atividades.css";
+@import "modal-atividades.css";
 @import "tabela.css";
 @import "contato.css";
 @import "footer.css";
@@ -47,7 +48,7 @@ html {
 }
 
 .paragrafos {
-  width: 48vw;
+  width: 60vw;
   text-align: justify;
 }
 
@@ -68,12 +69,12 @@ html {
 }
 
 .pousada {
-  width: 48vw;
+  width: 60vw;
   height: auto;
 }
 
 #carousel {
-  width: 48vw;
+  width: 60vw;
   height: auto;
 }
 

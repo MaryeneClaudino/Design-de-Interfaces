@@ -1,0 +1,15 @@
+.ajustando-posicao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5vw;
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+}
+
+.modal-content {
+  box-shadow: 0.2vw 0.2vw 0.3vw var(--bs-brown-4);
+  border: 2px solid var(--bs-brown-4);
+}

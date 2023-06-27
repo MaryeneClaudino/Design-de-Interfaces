@@ -26,6 +26,11 @@
   box-shadow: 0.3vw 0.3vw 0.6vw var(--bs-brown-4);
 }
 
+.img-maior {
+  border-radius: 0.5vw;
+  box-shadow: 0.3vw 0.3vw 0.6vw var(--bs-brown-4);
+}
+
 .legenda-atividade {
   text-align: center;
   width: 12vw;

@@ -54,7 +54,8 @@
                                 onclick="closeSideMenu()">
                         </a>
                     </div>
-                    <div class="offcanvas-body" data-bs-dismiss="offcanvas">
+                    <!-- data-bs-dismiss="offcanvas" -->
+                    <div class="offcanvas-body">
                         <ul id="menu-items" class="nav flex-column">
                             <li class="nav-item">
                                 <a id="link-home" class="nav-link active" href="#home" onclick="closeSideMenu()">A
@@ -422,7 +423,12 @@
                 var linkAtual = url.substring(url.lastIndexOf("#") + 1, url.length);
                 setActiveMenu("link-" + linkAtual);
             }
+
+            // document.getElementById(linkAtual).scrollTo();
+
         }
+
+
 
         function closeSideMenu() {
             //Fecha menu lateral

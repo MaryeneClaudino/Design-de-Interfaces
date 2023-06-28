@@ -49,12 +49,12 @@
                 </a>
                 <!-- data-bs-dismiss="offcanvas" -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="side-menu" aria-labelledby="side-menuLabel">
-                    <div class="offcanvas-header ">
+                    <div class="offcanvas-header" data-bs-dismiss="offcanvas">
                         <a href="#home">
                             <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
                         </a>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body" data-bs-dismiss="offcanvas">
                         <ul id="menu-items" class="nav flex-column">
                             <li class="nav-item">
                                 <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
@@ -418,18 +418,18 @@
                 setActiveMenu("link-" + linkAtual);
             }
 
-            //Fecha menu lateral
-            setTimeout(function () {
-                var elmSideMenu = document.getElementById('side-menu');
-                elmSideMenu.classList.remove('show');
-                var children = elmSideMenu.children;
-                for (var child of children) {
-                    child.classList.remove('show');
-                }
-                for (var elm of document.getElementsByClassName('offcanvas-backdrop')) {
-                    elm.classList.remove('show');
-                };
-            }, 600);
+            // //Fecha menu lateral
+            // setTimeout(function () {
+            //     var elmSideMenu = document.getElementById('side-menu');
+            //     elmSideMenu.classList.remove('show');
+            //     var children = elmSideMenu.children;
+            //     for (var child of children) {
+            //         child.classList.remove('show');
+            //     }
+            //     for (var elm of document.getElementsByClassName('offcanvas-backdrop')) {
+            //         elm.classList.remove('show');
+            //     };
+            // }, 600);
         }
 
         function setActiveMenu(idLink) {

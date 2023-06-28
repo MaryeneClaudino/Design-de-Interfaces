@@ -47,29 +47,34 @@
                 <a class="btn" data-bs-toggle="offcanvas" href="#side-menu" role="button" aria-controls="side-menu">
                     <img src="img/menu.svg" alt="Icon menu">
                 </a>
-                <!-- data-bs-dismiss="offcanvas" -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="side-menu" aria-labelledby="side-menuLabel">
-                    <div class="offcanvas-header" data-bs-dismiss="offcanvas">
+                    <div class="offcanvas-header">
                         <a href="#home">
-                            <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
+                            <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada"
+                                onclick="closeSideMenu()">
                         </a>
                     </div>
                     <div class="offcanvas-body" data-bs-dismiss="offcanvas">
                         <ul id="menu-items" class="nav flex-column">
                             <li class="nav-item">
-                                <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
+                                <a id="link-home" class="nav-link active" href="#home" onclick="closeSideMenu()">A
+                                    Pousada</a>
                             </li>
                             <li class="nav-item">
-                                <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                                <a id="link-atividades" class="nav-link" href="#atividades"
+                                    onclick="closeSideMenu()">Atividades</a>
                             </li>
                             <li class="nav-item">
-                                <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                                <a id="link-pacotes" class="nav-link" href="#pacotes"
+                                    onclick="closeSideMenu()">Pacotes</a>
                             </li>
                             <li class="nav-item">
-                                <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
+                                <a id="link-instalacoes" class="nav-link" href="#instalacoes"
+                                    onclick="closeSideMenu()">Instalações</a>
                             </li>
                             <li class="nav-item">
-                                <a id="link-contato" class="nav-link" href="#contato">Contato</a>
+                                <a id="link-contato" class="nav-link" href="#contato"
+                                    onclick="closeSideMenu()">Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -417,19 +422,21 @@
                 var linkAtual = url.substring(url.lastIndexOf("#") + 1, url.length);
                 setActiveMenu("link-" + linkAtual);
             }
+        }
 
-            // //Fecha menu lateral
-            // setTimeout(function () {
-            //     var elmSideMenu = document.getElementById('side-menu');
-            //     elmSideMenu.classList.remove('show');
-            //     var children = elmSideMenu.children;
-            //     for (var child of children) {
-            //         child.classList.remove('show');
-            //     }
-            //     for (var elm of document.getElementsByClassName('offcanvas-backdrop')) {
-            //         elm.classList.remove('show');
-            //     };
-            // }, 600);
+        function closeSideMenu() {
+            //Fecha menu lateral
+            setTimeout(function () {
+                var elmSideMenu = document.getElementById('side-menu');
+                elmSideMenu.classList.remove('show');
+                var children = elmSideMenu.children;
+                for (var child of children) {
+                    child.classList.remove('show');
+                }
+                for (var elm of document.getElementsByClassName('offcanvas-backdrop')) {
+                    elm.classList.remove('show');
+                };
+            }, 600);
         }
 
         function setActiveMenu(idLink) {

@@ -19,7 +19,7 @@ main {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto !important;
 }
 
 .position-content {

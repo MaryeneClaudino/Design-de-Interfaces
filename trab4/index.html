@@ -47,8 +47,8 @@
                 <a class="btn" data-bs-toggle="offcanvas" href="#side-menu" role="button" aria-controls="side-menu">
                     <img src="img/menu.svg" alt="Icon menu">
                 </a>
-                <div class="offcanvas offcanvas-start" data-bs-dismiss="offcanvas" tabindex="-1" id="side-menu"
-                    aria-labelledby="side-menuLabel">
+                <!-- data-bs-dismiss="offcanvas" -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="side-menu" aria-labelledby="side-menuLabel">
                     <div class="offcanvas-header ">
                         <a href="#home">
                             <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
@@ -417,6 +417,19 @@
                 var linkAtual = url.substring(url.lastIndexOf("#") + 1, url.length);
                 setActiveMenu("link-" + linkAtual);
             }
+
+            //Fecha menu lateral
+            setTimeout(function () {
+                var elmSideMenu = document.getElementById('side-menu');
+                elmSideMenu.classList.remove('show');
+                var children = elmSideMenu.children;
+                for (var child of children) {
+                    child.classList.remove('show');
+                }
+                for (var elm of document.getElementsByClassName('offcanvas-backdrop')) {
+                    elm.classList.remove('show');
+                };
+            }, 600);
         }
 
         function setActiveMenu(idLink) {

@@ -48,10 +48,10 @@
                     <img src="img/menu.svg" alt="Icon menu">
                 </a>
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-dismiss="offcanvas" tabindex="-1"
-                    id="side-menu" aria-labelledby="side-menuLabel">
+                    id="side-menu">
                     <div class="offcanvas-header">
                         <a href="#home">
-                            <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada" href="#home">
+                            <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
                         </a>
                     </div>
                     <div class="offcanvas-body">
@@ -312,8 +312,16 @@
                 </tbody>
             </table>
             <p class="paragrafos">
-                Qualquer dúvida ou caso especial(festas de aniversário, casamento, entre outros) basta entrar em contato
-                com a gente para em um dos meios de comunicação para saber condições de pagamento e valores.
+                Aceitamos os pagamentos nos seguintes métodos:
+            </p>
+            <div class="cartoes">
+                <img class="metodo-pagamento" src="img/mastercard.png" alt="Cartões Mastercard" loading="lazy">
+                <img class="metodo-pagamento" src="img/visa-electron.png" alt="Cartões Visa" loading="lazy">
+                <img class="metodo-pagamento" src="img/pix-106.png" alt="Pix" loading="lazy">
+            </div>
+            <p class="paragrafos">
+                Qualquer dúvida ou caso especial (festas de aniversário, casamento, entre outros) basta entrar em
+                contato com a gente para em um dos meios de comunicação para saber condições de pagamento e valores.
             </p>
         </div>
         <div id="instalacoes" class="position-content">
@@ -405,7 +413,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
         //Registra evento ao carregar a página
         window.addEventListener('hashchange', detectPage);
 

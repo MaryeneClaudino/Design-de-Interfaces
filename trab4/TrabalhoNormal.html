@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Rabo do Lagarto</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preload" href="estilos-css/global.css" as="style">
+    <link rel="stylesheet" type="text/css" href="estilos-css/global.css" />
+</head>
+
+<body>
+    <header id="header">
+        <a href="#home">
+            <img class="logo" src="img/logo.png" alt="Logo da pousada">
+        </a>
+        <nav>
+            <div class="desktop">
+                <ul id="menu-items" class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a id="link-home" class="nav-link active" href="#home">A Pousada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link-contato" class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="side-menu">
+                <a class="btn" data-bs-toggle="offcanvas" href="#side-menu" role="button" aria-controls="side-menu">
+                    <img src="img/menu.svg" alt="Icon menu">
+                </a>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-dismiss="offcanvas" tabindex="-1"
+                    id="side-menu">
+                    <div class="offcanvas-header">
+                        <a href="#home">
+                            <img class="logo-side-menu" src="img/logo.png" alt="Logo da pousada">
+                        </a>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul id="menu-items" class="nav flex-column">
+                            <li class="nav-item">
+                                <a id="link-home" class="nav-link active" href="#home">A
+                                    Pousada</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-atividades" class="nav-link" href="#atividades">Atividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-pacotes" class="nav-link" href="#pacotes">Pacotes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-instalacoes" class="nav-link" href="#instalacoes">Instalações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="link-contato" class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="position-content">
+            <h1 class="title">A Pousada</h1>
+            <img class="pousada" src="img/pousada.webp" alt="Foto da pousada">
+            <p class="paragrafos">
+                A pousada Rabo do Lagarto se encontra entre as cidades de Rio Grande e Pelotas, no extremo sul do Rio
+                Grande do Sul. Um lugar
+                bonito e tranquilo, onde você e toda sua família poderá descansar e se divertir em meio a natureza.
+                Na nossa pousada não possuímos wifi, para que os hóspedes de desliguem da correria e da tecnologia e
+                consigam se conectar mais intensamente
+                com a natureza ao seu redor.
+            </p>
+            <p class="paragrafos">
+                No nosso site é possível conferir alguns <a class="link" href="#pacotes">preços</a> e <a class="link"
+                    href="#atividades">atividades</a> além de algumas das fotos das <a class="link"
+                    href="#instalacoes">nossas
+                    instalações</a>,
+                estamos disponíveis para retirar qualquer dúvida o mais rápido através dos nossos telefones de contato
+                ou pelo <a class="link" href="#contato">formulário</a> do
+                nosso site.
+            </p>
+            <p class="paragrafos">Estamos aguardando a sua visita ansiosamente.</p>
+        </div>
+        <div id="atividades" class="position-content">
+            <h1 class="title">Atividades</h1>
+            <p class="paragrafos">
+                Nossas instalações estão prontas para receber você e sua família com todo o conforto que merecem, tanto
+                em nossos ambientes internos quanto nos campos e bosques que cercam a pousada.
+            </p>
+            <p class="paragrafos">
+                Para maiores detalhes de horário de funcionamento e preços é só clicar na atividade desejada, pois
+                contamos com diversas opções, tais como:
+            </p>
+            <div class="posicao-atividades margin-atividade">
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalCamping">
+                    <img class="thumbnail" src="img/camping.webp" alt="Área de camping" loading="lazy">
+                    <p class="legenda-atividade">
+                        Área de Camping
+                    </p>
+                </div>
+                <!--------------------------------- Modal Camping ----------------------------------->
+                <div class="modal fade" id="ModalCamping" tabindex="-1" aria-labelledby="ModalCamping"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="ajustando-posicao">
+                                    <img class="img-maior" src="img/camping.webp" alt="Área de camping" loading="lazy">
+                                    <p>
+                                        A área de camping funciona todos os dias da semana, a entrada é a partir das
+                                        8h e a saída é no máximo até às 20h.
+                                        As diárias por pessoa de segunda a quinta custam R$ 20,00 e de sexta a domingo
+                                        (ou feriados) custam R$ 35,00.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalCavalo">
+                    <img class="thumbnail" src="img/cavalo.webp" alt="Passeio de Cavalo" loading="lazy">
+                    <p class="legenda-atividade">
+                        Passeio a cavalo
+                    </p>
+                </div>
+                <!--------------------------------- Modal Cavalo ----------------------------------->
+                <div class="modal fade" id="ModalCavalo" tabindex="-1" aria-labelledby="ModalCavalo" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="ajustando-posicao">
+                                    <img class="img-maior" src="img/cavalo.webp" alt="Passeio de Cavalo" loading="lazy">
+                                    <p>
+                                        O passeio a cavalo é gratuito e acontece em três horários do dia: às 10h, às 15h
+                                        e às 17h. A rota é pelas trilhas da pousada sempre acompanhado de um guia que
+                                        auxilia em todo o caminho. Faz-se necessário o agendamento até 2h antes do
+                                        passeio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalChurrasco">
+                    <img class="thumbnail" src="img/churrasco.webp" alt="Churrasco Campeiro" loading="lazy">
+                    <p class="legenda-atividade">
+                        Área para Churrasco Campeiro
+                    </p>
+                </div>
+                <!--------------------------------- Modal Churrasco ----------------------------------->
+                <div class="modal fade" id="ModalChurrasco" tabindex="-1" aria-labelledby="ModalChurrasco"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="ajustando-posicao">
+                                    <img class="img-maior" src="img/churrasco.webp" alt="Churrasco Campeiro"
+                                        loading="lazy">
+                                    <p>
+                                        A área para churrasco campeiro é gratuita e fica disponível mediante reserva
+                                        antecipada e pode ser utilizada todos os dias da semana.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalPiscina">
+                    <img class="thumbnail" src="img/piscina.webp" alt="Piscina Climatizada" loading="lazy">
+                    <p class="legenda-atividade">
+                        Piscina Climatizada
+                    </p>
+                </div>
+                <!--------------------------------- Modal Piscina ----------------------------------->
+                <div class="modal fade" id="ModalPiscina" tabindex="-1" aria-labelledby="ModalPiscina"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="ajustando-posicao">
+                                    <img class="img-maior" src="img/piscina.webp" alt="Piscina Climatizada"
+                                        loading="lazy">
+                                    <p>
+                                        A piscina aquecida funciona de terça a domingo e pode ser acessada livremente
+                                        das 9h às 18h. Crianças menores de 8 anos faz-se necessário a presença de
+                                        acompanhante para acessar a área e permanecer nela.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalFazendinha">
+                    <img class="thumbnail" src="img/fazendinha.webp" alt="Vivências Laborais" loading="lazy">
+                    <p class="legenda-atividade">
+                        Vivências Laborais
+                    </p>
+                </div>
+                <!--------------------------------- Modal Fazendinha ----------------------------------->
+                <div class="modal fade" id="ModalFazendinha" tabindex="-1" aria-labelledby="ModalFazendinha"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="ajustando-posicao">
+                                    <img class="img-maior" src="img/fazendinha.webp" alt="Vivências Laborais"
+                                        loading="lazy">
+                                    <p>
+                                        O acompanhamento do trato dos animais é feito em dois horários: às 8h e às 16h.
+                                        Durante o acompanhamento é possível acariciar e participar dos cuidados com a
+                                        orientação do funcionário responsável.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+                <div class="atividades" data-bs-toggle="modal" data-bs-target="#ModalCharrete">
+                    <img class="thumbnail" src="img/charrete.webp" alt="Passeio de Charrete" loading="lazy">
+                    <p class="legenda-atividade">
+                        Passeio de charrete
+                    </p>
+                </div>
+                <!--------------------------------- Modal Charrete ----------------------------------->
+                <div class="modal fade" id="ModalCharrete" tabindex="-1" aria-labelledby="ModalCharrete"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="ajustando-posicao">
+                                    <img class="img-maior" src="img/charrete.webp" alt="Passeio de Charrete"
+                                        loading="lazy">
+                                    <p>
+                                        O passeio de charrete é ideal para levar a família. O valor é R$50,00 a volta
+                                        para 5 pessoas. Esses passeios acontecem a cada 1 hora a partir das 9h da manhã.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------------------------>
+            </div>
+            <p class="paragrafos">
+                Venha explorar a paisagem pampeana e respirar o ar puro dos nossos campos verdes!
+            </p>
+        </div>
+        <div id="pacotes" class="position-content">
+            <h1 class="title">Pacotes</h1>
+            <p class="paragrafos">
+                Os pacotes de diárias são referentes as cabanas e chalés e o pacote família inclui até 4 pessoas. Para
+                saber como funciona e os preços das atividades disponíveis na nossa pousada é só <a class="link"
+                    href="#atividades">clicar aqui</a>.
+            </p>
+            <p class="paragrafos">
+                Os preços dos pacotes atuais podem ser vistos abaixo:
+            </p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Diária(s)</th>
+                        <th>Pacote</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Família</td>
+                        <td>R$320,00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Casal</td>
+                        <td>R$200,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Família</td>
+                        <td>R$510,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Casal</td>
+                        <td>R$350,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="paragrafos">
+                Aceitamos os pagamentos nos seguintes métodos:
+            </p>
+            <div class="cartoes">
+                <img class="metodo-pagamento" src="img/mastercard.png" alt="Cartões Mastercard" loading="lazy">
+                <img class="metodo-pagamento" src="img/visa-electron.png" alt="Cartões Visa" loading="lazy">
+                <img class="metodo-pagamento" src="img/pix-106.png" alt="Pix" loading="lazy">
+            </div>
+            <p class="paragrafos">
+                Qualquer dúvida ou caso especial (festas de aniversário, casamento, entre outros) basta entrar em
+                contato com a gente para em um dos meios de comunicação para saber condições de pagamento e valores.
+            </p>
+        </div>
+        <div id="instalacoes" class="position-content">
+            <h1 class="title">Nossas Instalações</h1>
+            <p class="paragrafos">
+                Nossa pousada está equipada com quartos confortavés e espaçosos pensando na sua maior comodidade durante
+                toda a estadia.
+                Possuimos chalés para casais apaixonados que desejam curtir um momento a sós bem romântico, com
+                hidromassagem. Para a
+                família temos cabanas grandes com lareira, ar condicionado e netflix nas televisões.
+            </p>
+            <p class="paragrafos">
+                Confira algumas fotos das nossa instalações abaixo:
+            </p>
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="img/pousada.webp" class="d-block w-100" alt="Foto da pousada" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide4.webp" class="d-block w-100" alt="Foto das cabanas" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide1.webp" class="d-block w-100" alt="Fotos do quarto da cabana" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide3.webp" class="d-block w-100" alt="Fotos do quarto do chalé" loading="lazy">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/slide2.webp" class="d-block w-100" alt="Fotos dos chalés cabana" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contato" class="position-content">
+            <h1 class="title">Contato</h1>
+            <div class="form">
+                <form onsubmit="alert('Sua dúvida foi enviada com sucesso. Resposnderemos o mais breve possível.')">
+                    <fieldset>
+                        <legend class="float-none w-auto">Informações pessoais</legend>
+                        <label for="nome">Nome<b>*</b></label><br>
+                        <input type="text" id="nome" name="nome" required><br>
+                        <label for="email">Email<b>*</b></label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="assunto">Assunto<b>*</b></label><br>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione</option>
+                            <option value="Funcionamento das atividades">Funcionamento das Atividades</option>
+                            <option value="Preços promocionais">Preços Promocionais</option>
+                            <option value="pacotes">Pacotes</option>
+                            <option value="outros">Outros</option>
+                        </select><br>
+                        <label for="duvida">Dúvida<b>*</b></label><br>
+                        <textarea class="textarea" id="duvida" name="duvida" rows="5" cols="45" required></textarea><br>
+                        <div class="divrowfrom">
+                            <p><b>* Campos Obrigatórios</b></p>
+                            <div class="posicao-botao">
+                                <input class="botao" type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer margin-top" id="footer">
+        <div>
+            <p> <img class="redesocial" src="img/whatss.png" alt="icon whatssap" loading="lazy"> (53) 981740249</p>
+
+            <p> <img class="redesocial" src="img/insta.png" alt="icon instagram" loading="lazy"> @rabodolagarto</p>
+
+            <p> <img class="redesocial" src="img/face.png" alt="icon facebook" loading="lazy"> /rabodolagarto</p>
+        </div>
+        <div class="divcolumn">
+            <p>Rua Érico Mendes, 17. Povo Novo - RS</p>
+            <div>
+                <p>rabodolagarto@gmail.com</p>
+                <p>(53) 3233-4012</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Registra evento ao carregar a página
+        window.addEventListener('hashchange', detectPage);
+
+        function detectPage() {
+            var url = window.location.href;
+
+            if (!url.includes("#")) {
+                setActiveMenu("link-home");
+            } else {
+                var linkAtual = url.substring(url.lastIndexOf("#") + 1, url.length);
+                setActiveMenu("link-" + linkAtual);
+            }
+        }
+
+        function setActiveMenu(idLink) {
+            var arrLinks = document.getElementsByClassName("nav-link");
+            for (var i = 0; i < arrLinks.length; i++) {
+                if (arrLinks[i].id != idLink) {
+                    //desativa outros
+                    arrLinks[i].classList.remove("active");
+                } else {
+                    //ativa o clicado 
+                    arrLinks[i].classList.add("active");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
